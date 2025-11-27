@@ -1,0 +1,48 @@
+Creating list
+    list = ['item1', 'item2', 'item3']
+
+Accessing item from a list
+    list[0]   return first item in a list
+    list[-1]  return last item in a list
+
+Modify item in a list
+    same as accessing it but assigning the new value
+    list[0] = 'new_item'
+
+Adding item to a list
+    - you can use append () method to add item to the end of the list
+        list.append('new_item')
+    - you can use insert method to add the item in specific index and shift the entier list
+        list.insert(1, 'new_item')
+
+Removing item from a list
+    - You can use del statement to delete specific item
+        del list[0]   this will delte index 0 value
+    - you can use pop() method
+        If you didnot specify index it will delete the last item in a list  ex: list.pop()
+        You can specify index and it will remove that index value from a list ex: list.pop(0)
+    - you can remove item from a list using the value of that item if you donot know the exact location of it using remove() method
+        list.remove('item_value')
+    
+    Question here is when i use del statement and pop() method 
+    well using del statement when you will not need to use that item value anywhere else because the deleted item value cannot be stored in a variable for future use however use pop method in case you will work later with the deleted item value
+
+    Another note the remove() method will remove the first occurance of that value in the list it will not remove all teh occerance of the value  in case you want to rmeove all the occurance of the value then you need to loop this list and use remove() method inside the loop to work as expected
+
+Organizing a list
+    - Permenant sort using sort() method you can never retrive the orignal order of the list
+        list.sort()
+        list.sort(reverse=True) sort in the reverse order
+    - to maintain the original order of the list but present it sorted you can use sorted() method
+        sorted(list)
+        sorted(list, reverse=True)
+
+print a list in reverse order
+    list.reverse()
+    print(list)
+    note the reverse() method change the order permenantly but you can always re apply the reverse method again to get the original order
+
+getting the mength or a list 
+    use the len() method
+    len(list)
+
