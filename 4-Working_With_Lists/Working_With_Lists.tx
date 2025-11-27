@@ -1,0 +1,30 @@
+- Looping through an entire list
+    list = ['item', 'item', 'item']
+    for item in list:
+        print(item)
+    
+- for loop will run a piece of code that is indented inside many times till it goes through all the items in the list.
+- code that is not indentedinside for loop will run only once.
+- Avoid indentation errors to avoid syntax and logical errors.
+- syntax errors can result from forgetting the  : or maybe forgetting to indent the code inside the for loop
+- logical errors are expected when you see  an action is repeated while it shouldnot or when you see an action only done once while it should be repeated which is mainly due to forgetting or doing indentation.
+
+-Numerical lists
+    - python provide a lot of tools that can help in working with Numerical lists
+    - we have range() function/method it will create series of numbers based on what you provide as start/end or you can give only one number and it will start from 0 to that number
+        for number in range(1, 5):
+            print (number) will print from 1 to 4
+        for number in range(6):
+            print(number) will print from 0 to 5
+    - The range() function in Python, while most commonly used in conjunction with for loops, does not always require a for loop.
+    - The range() function itself returns a range object, which is an immutable sequence type that represents an immutable sequence of numbers. This object is an iterator, meaning it produces numbers one at a time when requested.
+    - you can use range() function to create lists by using the list functionwith the range function
+        list(range(1, 5))
+        list(range(2, 11, 2))  this will produce the even numbers from 2 to 10 2 here is the step between each 2 items
+    - How to perform some statistics on lists like what is the min/max/sum of all teh numbers of the Numerical list?
+        list [1, 2, 3, 4, 5]
+        min(list)
+        max(list)
+        sum(list)
+    - List comprehension is creating a list and do some work in only one line of code 
+        squares = [value**2 for vlaue in range(1, 11)] this will create a list for the square of all the number from 1 to 10
