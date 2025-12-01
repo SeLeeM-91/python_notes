@@ -28,3 +28,42 @@
         sum(list)
     - List comprehension is creating a list and do some work in only one line of code 
         squares = [value**2 for vlaue in range(1, 11)] this will create a list for the square of all the number from 1 to 10
+
+- Working with part of a list:
+    - Slicing a list
+        list = ['item', 'item', 'item', 'item', 'item']
+        print(list[0:3])  will print the first 3 items in the list  == print(list[:3])  python will start from the beginning by default
+        print(list[2:]) will print items from the third item till the end of the list
+        print(list[-3:])  will print teh last 3 items in a list
+        print(list[0:5:1]) will print item and skipp one item  list[start:end:step]
+
+        - you can loop through a slice using for loop
+            for item in list[0:3]:
+                print(item.title())
+        - Copiing a list
+            new_list = list[:] this will create a complelty new list that has same items
+            however if you copied it without slice then it will not work new_list = list
+                if you added an item to list it will also be added to new_list cause you just created another variable new_list and both variables are pointing to the same list so any change in any of the 2 variable it will affect the list.
+
+
+OK till now you can work with lists and do some modification on thier values but what if i want a list that values cannot change? use Tuples which is an immutable list
+- Creating Tuples
+    tuple = (20, 50)
+    print(tuple[0]) will print 20
+    print(tuple[1]) will print 50
+    You can define the tuple without using ( ) it basicly use comma , so you can do the following
+    tuple = 20, 50
+    tuple = 20, 'hello', 50
+    tuple = 20,
+    tuple = (20,) creating a tuple that has one item
+
+- Looping through a Tuple is the same as a list
+    for item in tuple:
+        print(item)
+
+- Writing over a tuple?
+    although you cannot modify the values of the items in a tuple but you can assign the new values to a variable the represent a tuble
+    tuple = 2, 4
+    tuple = 3, 5  this will not raise an error and will write over the original values
+
+Simply use Tuple when you have some valuses that you donot want it to be changed  otherwise use lists
