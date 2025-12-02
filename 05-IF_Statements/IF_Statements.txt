@@ -1,0 +1,52 @@
+IF Statements
+    - IF statements allows you to check the current state of your program and respond to that state appropriately
+    - Equality is ==  cuase = is used for variale assignments it is case sensitive so when comparing string you can use lower() method in the comparison
+    - Inequality is != 
+    - Numirical comparison is simple it use == , <=, >=, !=
+    - indvidual tests in the IF statement doesnot require () however for readability you can use ()
+    - use or/and in case there is multiple conditions/tests you need to evaluate for or when one condition is true the result is true however for and both tests must be true in order to get result true for the condition.
+    - checking if specific value is in a list we use in keyword and not in keyword to check if specific vlue is not in a list.
+    - Boolean expersion are True/False you can use o keep track of speciic state of a program or specific condition.
+    ex:
+    topping = 'cheese'
+    if topping != 'onion' or topping != 'pepproni':
+        print("Hold the topping")  
+    
+    ex:
+    list = ['item', 'item', 'item', 'item', 'item']
+    item in list
+    result is True
+    item not in list
+    result is False
+
+    - if statment variation
+        ex:
+        if condition:
+            do something
+        
+        ex:
+        if condition:
+            do something
+        else:
+            do something else
+        
+        ex:
+        if condition:
+            do something
+        elif condition:
+            do something
+        elif condition:
+            do something
+        else:
+            do something
+        
+        ex:
+        if condition:
+            do something
+        elif condition:
+            do something
+    
+    - note when using if-else or if-elif-else the code stops when the first test is sucessful so if the first condition in if is ture it will not go to check teh elif or else statements  however if you need all testes to be checked then you need to use seprate if statements by this your code will go through all the condition and check/evaluate them seprately.
+    - checking of the list is empty? if the list is empty the condition will return false if it has at least one item it will return true
+        if list:
+            do something
