@@ -1,0 +1,10 @@
+Dictionary
+    - Dictionaries allows us to connect piecies of related information
+    - Dictiobnary is a collection of key-value pairs each key connected  to a value nad you can use key to access teh value and the value can be number, string, list or even another dictionary in fact you can use any object that you can create in python as a vlaue.
+    ex:
+        dictionary = {'key' : 'value', 'key' : 'value', 'key' : 'value', 'key' : 'value'}
+    - Accessing values:
+        dictionary[key]
+    - We can have unlimited number of key/value pairs in a dictionary.
+    - Adding new key/value pairs
+    
